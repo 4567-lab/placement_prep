@@ -1,0 +1,351 @@
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #172554;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+.features {
+    padding: 35px 6%;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000012;
+}
+
+.card a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about {
+    text-align: center;
+    padding: 35px 8%;
+    background: #e2e8f0;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+/*login page*/
+/* Reset & Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* App Brand Header */
+h2 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+}
+
+/* Navigation Links */
+nav {
+    margin-bottom: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3498db;
+    margin: 0 12px;
+    font-weight: 500;
+    text-transform: lowercase;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Main Login Card Panel */
+.panel {
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 400px;
+}
+
+.panel h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+    color: #555;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+input {
+    padding: 11px 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccd1d1;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Error Message Styling */
+.error {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #ffcdd2;
+}
+
+/* Footer Links inside Panel */
+.panel p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.panel p a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.panel p a:hover {
+    text-decoration: underline;
+}
+/*quize page*/
+/* Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h2 {
+    font-size: 1.5rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+header nav a:hover {
+    opacity: 0.8;
+}
+
+/* Main Container Panel */
+.panel {
+    max-width: 650px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.panel h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.panel > p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Progress Indicator */
+.progress-indicator {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Question Styling */
+.question {
+    margin-bottom: 20px;
+}
+
+.question h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+/* Option Labels */
+.question label {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background-color: #fafbfc;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.question label:hover {
+    background-color: #f1f4f8;
+    border-color: #c0c4cc;
+}
+
+.question input[type="radio"] {
+    margin-right: 12px;
+    accent-color: #007bff;
+    transform: scale(1.1);
+}
+
+/* Navigation Buttons Container */
+.quiz-nav-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Secondary / Previous Button */
+#prev-btn {
+    background-color: #6c757d;
+}
+
+#prev-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Submit Button */
+#submit-btn {
+    background-color: #28a745;
+}
+
+#submit-btn:hover {
+    background-color: #218838;
+}

@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+    <h2>PlacementPrep</h2>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/practice">Practice</a>
+        <a href="/quiz">Quiz</a>
+        <a href="/logout">Logout</a>
+    </nav>
+</header>
+<main class="panel">
+    <h1>Welcome, {{ student }}!</h1>
+    <div class="card">
+        <h3>Total Quiz Attempts</h3>
+        <p>{{ attempts }}</p>
+    </div>
+    <div class="card">
+        <h3>Average Score</h3>
+        <p>{{ "%.1f"|format(average) }}%</p>
+    </div>
+    <p><a class="button" href="/practice">Programming Practice</a></p>
+    <p><a class="button" href="/quiz">Start Placement Quiz</a></p>
+    <h2>Recent Results</h2>
+    {% if results %}
+    <table>
+        <tr><th>Score</th><th>Total</th></tr>
+        {% for result in results %}
+        <tr><td>{{ result.score }}</td><td>{{ result.total }}</td></tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>No quiz attempts yet. Take your first quiz!</p>
+    {% endif %}
+</main>
+</body>
+</html>

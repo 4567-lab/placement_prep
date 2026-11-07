@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+    <h2>PlacementPrep</h2>
+    <nav><a href="/dashboard">Dashboard</a> <a href="/logout">Logout</a></nav>
+</header>
+<main class="panel">
+    <h1>Quiz Completed!</h1>
+    <p>Student: {{ student }}</p>
+    <h2>Your Score: {{ score }} / {{ total }}</h2>
+    <h2>Percentage: {{ "%.1f"|format(score * 100 / total) }}%</h2>
+    {% if score * 100 / total >= 60 %}
+        <p>Good work! Keep practising.</p>
+    {% else %}
+        <p>Keep learning and try again.</p>
+    {% endif %}
+    <a class="button" href="/quiz">Try Again</a>
+    <a class="button" href="/dashboard">Dashboard</a>
+</main>
+</body>
+</html>

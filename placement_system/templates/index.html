@@ -1,0 +1,90 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Placement Preparation System</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <h2>PlacementPrep</h2>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/register">Register</a>
+        <a href="/login">Login</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to PlacementPrep</h1>
+
+    <h2>Student Placement Preparation System</h2>
+
+    <p>
+        Prepare for your dream job with programming practice,
+        technical quizzes and placement skill development.
+    </p>
+
+    <a href="/register" class="button">Get Started</a>
+    <a href="/login" class="button secondary">Student Login</a>
+</section>
+
+<section class="features">
+    <h2>Our Features</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Programming Practice</h3>
+            <p>
+                Practise Python programming and improve your
+                problem-solving skills.
+            </p>
+            <a href="/practice">Start Practising</a>
+        </div>
+
+        <div class="card">
+            <h3>Technical Quiz</h3>
+            <p>
+                Test your technical knowledge through
+                multiple-choice questions.
+            </p>
+            <a href="/quiz">Take Quiz</a>
+        </div>
+
+        <div class="card">
+            <h3>Student Dashboard</h3>
+            <p>
+                Track your quiz attempts and monitor
+                your performance.
+            </p>
+            <a href="/login">View Dashboard</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="about">
+    <h2>About Our System</h2>
+
+    <p>
+        The Student Placement Preparation System helps students
+        prepare for campus recruitment. Students can register,
+        log in, practise programming, attend technical quizzes
+        and review their results.
+    </p>
+</section>
+
+<footer>
+    <p>&copy; 2026 PlacementPrep | Student Placement Preparation System</p>
+</footer>
+
+</body>
+</html>
